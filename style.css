@@ -61,6 +61,6 @@ footer p{
 	font-size: 10.5px;
 }
 
-p{
-	margin: 80px 10px 10px 10px;
+.px80{
+	font-size: 80px;
 }
