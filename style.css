@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+header{
+	width: 100%;
+	padding: 15px 0;
+	margin: 0 10px;
+	
+}
+
+.reload{
+	cursor: pointer;
+}
+
+footer{
+	background-color: gray;
+	margin: 0;
+	padding: 10px;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-size: 10.5px;
+}
