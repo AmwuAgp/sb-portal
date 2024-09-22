@@ -9,6 +9,10 @@ body{
     sans-serif;
 }
 
+main{
+	margin: 100px 15px 0 15px;
+}
+
 header{
 	width: 100%;
 	padding: 15px 2%;
@@ -59,8 +63,4 @@ footer p{
 	color: white;
 	text-align: center;
 	font-size: 10.5px;
-}
-
-.px80{
-	font-size: 80px;
 }
