@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SB Portal | Top</title>
+	<title>Top | SB Portal</title>
 	<meta name="description" content="テスト範囲等まとめてます" /><!-- metascription -->
 	<link rel="icon" href="画像URL" sizes="16x16" type="image/png" /><!-- サイトアイコン -->
 	<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
@@ -37,14 +37,40 @@
 		<nav>
 			<ul class="nav">
 				<li><a onclick="window.location.reload(true);" class="reload">Top</a></li>
-				<li><a href="./scadule/">Scadule</a></li>
+				<li><label for="popup" id="txt_label">Scadule</label></li>
 				<li><a href="./notes/">Notes</a></li>
-				<li><a href="./about/">About</a></li>
+				<li><a href="#about">About</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<input type="checkbox" id="popup">
 		<!-- ここから記述 -->
+		<h3>テスト勉強等に使えるノートは<a href="./notes">こちら</a>から</h3>
+		<h2 class="about">About</h2>
+		<p>
+			　「<span class="bold">高度に暇を潰したい</span>」、そんな思いから、このサイトは生まれました。<br>
+			　毎日が暇で仕方がなかった僕ら。しかし、そんな僕らにも転換期が訪れようとしています。<br><br>
+			　はじめは、ウルハンの方から、こんなアプリ作ったら面白そうだよねと提案があり、学園祭が終わったら一緒に（アプリ開発を）やってみようという話になりました。しかし、調べるうちに、2人の持っているWindowsの環境ではiOS・iPadOS向けのアプリの開発は難しく、アプリをストアでリリースするには、お金がかかり、厳しい審査があることが分かってきました。そこで僕らは、Webアプリの開発という方向からアプローチしてみようとしました。Webアプリであれば、比較的簡単で自分たちも使ったことのあるhtml・CSSでできる他、調べてみると、PWAというGoogleが提唱したWebアプリをスマートフォンやパソコンにインストールする技術がありました。この方法であれば、本物のアプリストアからリリースされているアプリと遜色ないクォリティーのものが作れるのではないかと考えました。<br>
+		</p>
+		<h2>更新履歴</h2>
+		<p>2024/09/21 開設</p>
+
+		<!-- ポップアップ部分 -->
+		<div id="overlay">
+			<label for="popup" id="bg_gray"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+			<div id="window"> <!-- ウィンドウ部分 -->
+				<label for="popup" id="btn_cloth"> <!-- 閉じるボタン -->
+					<span></span>
+				</label>
+				<div id="msg"> <!-- ウィンドウのコンテンツ -->
+					<h2>現在ご利用いただけません</h2>
+					<p class="making">ページを制作中です</p>
+					<p>ポップアップの外をクリックしてもウィンドウが閉じます。</p>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<p>&copy; 2024 AmwuAgp & Takumi</p>
