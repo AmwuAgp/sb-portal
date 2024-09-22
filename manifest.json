@@ -1,7 +1,7 @@
 {
   "name": "Shiba Portal",
   "short_name": "SB Portal",
-  "background_color": "#000000",
+  "background_color": "#ffffff",
   "icons": [{
       "src": "./mainimage.png",
       "sizes": "256x256",
